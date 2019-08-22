@@ -1,0 +1,662 @@
+* {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Blinker', sans-serif;
+}
+html, body{
+	scroll-behavior: smooth;
+}
+
+/* Header */
+
+#header h1 {
+	letter-spacing: .03em;
+	background-image: url(data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KIAogIDxwYXR0ZXJuIGlkPSJwYXR0ZXJuLWNoZWNrZXJzIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiID4KICAgIDxyZWN0IHN0eWxlPSJmaWxsOm5vbmU7IHN0cm9rZS13aWR0aDoxOyBzdHJva2U6cmdiKDAsMCwwKSIgY2xhc3M9ImNoZWNrZXIiIHg9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB5PSIwIi8+CiAgICA8cmVjdCBzdHlsZT0iZmlsbDpub25lOyBzdHJva2Utd2lkdGg6MTsgc3Ryb2tlOnJnYigwLDAsMCkiIGNsYXNzPSJjaGVja2VyIiB4PSIxMDAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB5PSIxMDAiLz4KICA8L3BhdHRlcm4+CiAgCiAgPHJlY3Qgc3R5bGU9InN0cm9rZS13aWR0aDoxOyBzdHJva2U6cmdiKDAsMCwwKSIgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuLWNoZWNrZXJzKSIgLz4KICAKPC9zdmc+);
+    margin: 0;
+    padding: 3em 0;
+    display: block;
+}
+
+#header .headertitle {
+	text-decoration: none;
+	color: #000;
+	margin-left: 10%;
+	font-size: 30px;
+}
+
+#navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 50px;
+    z-index: 5;
+    background-color: #000;
+    text-align: center;
+}
+
+#navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+
+#navbar ul li {
+	text-align: center;
+	width: 25%;
+}
+
+#navbar ul li a {
+	color: white;
+	text-decoration: none;
+
+}
+
+.white, .black {
+	padding: 2em 10%;
+	margin-bottom: 0.5em;
+}
+
+/* LET'S TALK */
+
+.first {
+	width: 100%;
+}
+
+.white h2 {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+
+.letstalk {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+
+.letstalk p {
+	line-height: 45px;
+}
+
+.letstalk a {
+	color: #000;
+	font-size: 14px;
+}
+
+.letstalk p.social a {
+	margin-right: 1em;
+    word-break: break-word;
+    display: inline;
+}    
+
+.letstalk button {
+	background: #fff;
+    color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    padding: 0.7em;
+}
+
+.letstalk button:hover{
+	box-shadow: -3px 3px #000;
+	transform: translate(3px,-3px);
+}
+
+.videocon {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.video {
+	position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    box-shadow: -3px 15px #000;
+}
+
+.video iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* WHAT DO YOU WANT TO BE */
+
+.black {
+	background-color: #000;
+	color: white;
+}
+
+.black h2 {
+	text-transform: uppercase;
+	text-align: left;
+	padding: 30px 0 25px;
+	font-weight: bolder;
+}
+
+.whatdoyouwanttobe {
+	text-transform: uppercase;
+	text-align: left;
+	height: 3em;
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+.black a {
+	color: white;
+}
+
+.grid-black1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	text-align: left;
+}
+
+.black p {
+	line-height: 1.5em;
+	padding: 0px 5px 15px 0px;
+}
+
+/* CHOOSE YOUR WAY */
+
+.grid-black2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5px;
+	text-align: left;
+	border: 1px solid grey;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: -3px 3px #000;
+}
+
+.learners {
+	text-transform: uppercase;
+	border-bottom: 1px solid grey;
+    grid-column: 1/3;
+}
+
+.grid-black2 h4 {
+	text-transform: uppercase;
+	padding: 20px 0px 3px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.grid-black2 h4, .grid-black2 p, .grid-black2 a {
+	color: #000;
+	line-height: 2.5em;
+}
+
+.paragraph {
+	line-height: 0.3em;
+}
+
+/* PARTNERS */
+
+img.hiringpartners {
+	vertical-align: middle;
+    margin-right: 2%;
+    width: 10%;
+   	filter: grayscale(100%);
+}
+
+/* FOOTER */
+
+footer {
+	padding: 2em 10%;
+	background-color: #000;
+	color: white;
+}
+
+footer a {
+    display: block;
+    line-height: 2em;
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+    font-size: 13px;
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+	text-align: left;
+}
+
+.menu p {
+	line-height: 2.5em;
+	font-size: 13px;
+}
+
+.menu .whatdoyouwanttobe {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+a.underline {
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: 3em;
+}
+
+/* JAVASCRIPT BOOTCAMP PAGE */
+
+.jf-maingrid {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 5px;
+}
+
+.jf-sections {
+	padding: 10px;
+	margin: 3px;
+}
+
+.jf-sections h1 {
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.jf-sections a {
+	color: #000;
+}
+
+.jf-sections h2 {
+	font-size: 20px;
+	text-align: left;
+}
+
+.jf-sections h3 {
+	padding-bottom: 20px;
+}
+
+.banners {
+	max-width: 100%;
+	filter: grayscale(100%);
+}
+
+.banners:hover {
+	max-width: 100%;
+	filter: none;
+}
+
+/* FORM */
+
+.form {
+	line-height: 45px;
+	margin: -15px -15px 30px;
+}
+
+.inputbox {
+	width: 30%;
+	border: 1px solid grey;
+	padding: 0.7em;
+	margin: 25px 10px 15px 0;
+}
+
+.submitbox {
+	width: 30%;
+	border: 1px solid black;
+	padding: 0.7em;
+	background-color: white;
+	margin: 25px 10px 15px 0;
+}
+
+.submitbox:hover {
+	box-shadow: -3px 3px #000;
+	transform: translate(3px,-3px);
+}
+
+li {
+	list-style: square;
+	line-height: 30px;
+	text-align: justify;
+}
+
+img {
+	max-width: 100%;
+	margin: 0 0 1em;
+}
+
+.codinglogos {
+	max-width: 100%;
+	height: 30px;
+	margin-right: 5%;
+	vertical-align: middle;
+	transition: 2s ease;
+}
+
+.codinglogos:hover {
+	transform: rotate(360deg);
+	transition: 2s ease;
+}
+
+/* STUDENT STORIES */
+
+.students-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.students-grid h3 {
+	line-height: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0 0 20px;
+}
+
+.students-grid h4 {
+	line-height: 20px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 0 0 20px;
+}
+
+.students-grid p {
+	line-height: 25px;
+}
+
+img.profilePic {
+	display: block;
+	border-radius: 50%;
+	max-width: 80%;
+	margin: 1em auto;
+	filter: grayscale(100%);
+}
+
+.section-p {
+	text-align: justify;
+	line-height: 30px;
+}
+
+img.img-center {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	max-width: 100%;
+	filter: grayscale(100%);;
+}
+
+img.img-center:hover {
+	filter: none;
+}
+
+/* ACCESS */
+
+.courses {
+	display: grid;
+	grid-template-columns: 1fr 6fr 4fr;
+	grid-gap: 1em;
+	text-align: left;
+	border: 1px solid grey;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: -3px 3px #000;
+}
+
+.courses h4 {
+	font-size: smaller;
+	text-transform: uppercase;
+}
+
+.courses h3 {
+	text-transform: uppercase;
+}
+
+.signup {
+	width: 100%;
+	border: 1px solid black;
+	padding: 0.7em;
+	background-color: white;
+	margin: 0 10px 15px 0;
+	font-size: medium;
+}
+
+.signup:hover {
+	box-shadow: -3px 3px #000;
+	transform: translate(3px,-3px);
+}
+
+.courses p {
+	line-height: 25px;
+	padding: 0 0 15px;
+}
+
+p.agree {
+	font-size: x-small;
+}
+
+.section-p h2 {
+	margin: 0 -15px 0;
+}
+
+.section-p h3 {
+	text-transform: uppercase;
+	padding-bottom: 0px;
+	margin: 0 -15px 0;
+}
+
+.section-p p {
+	padding: 5px 0;
+	margin: 0 -15px 0;
+}
+
+.faq summary {
+	padding: 10px 0 10px;
+}
+
+.faq p {
+	line-height: 25px;
+	padding: 15px 0 15px;
+}
+
+/* INQUIRY FORM */
+
+.inquiry-form h1 {
+	padding-top: 30px;
+}
+
+textarea {
+	overflow: auto;
+	width: 100%;
+	border: 1px solid grey;
+	padding: 10px 10px 25px;
+	font-size: medium;
+	margin-bottom: 10px;
+}
+
+.contact {
+	width: 48%;
+	border: 1px solid grey;
+	padding: 10px;
+	margin: 5px;
+	font-size: medium;
+}
+
+.inquiry-form p {
+	padding-top: 20px;
+}
+
+.robot {
+	width: 5%;
+	padding: 10px;
+	border: 1px solid grey;
+	overflow: visible;
+	font-size: medium;
+}
+
+.send-button {
+	width: 100%;
+	border: 1px solid grey;
+	background-color: white;
+	margin-top: 15px;
+	padding: 10px;
+	font-size: large;
+}
+
+.send-button:hover {
+	box-shadow: -3px 3px #000;
+	transform: translate(3px,-3px);
+}
+
+/* CALENDAR PAGE */
+
+.cal-h1:hover {
+	border-bottom: 3px solid black;
+}
+
+.courses a {
+	color: #000;
+}
+
+select {
+	width: 100%;
+	padding: 0.5em;
+	font-size: medium;
+	margin-bottom: 1em;
+}
+
+/* ABOUT US */
+
+.about-grid {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 1em;
+}
+
+.about-grid h1, .team h2 {
+	text-transform: uppercase;
+}
+
+.about-grid img {
+	filter: grayscale(100%);
+}
+
+.team-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	margin-bottom: 30px;
+}
+
+.team img {
+	filter: grayscale(100%);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team p {
+	line-height: 1.5em;
+	margin: 0 0 1em;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+	body {
+		max-width: 100%;
+	}
+
+	#header .headertitle {
+		margin-left: 4%;
+		font-size: 27px;
+	}
+
+	.white, .black {
+		padding: 1em 4%;
+		margin-bottom: 0.5em;
+	}
+
+	.letstalk {
+		width: 100%;
+	}
+
+	.letstalk p.social a {
+		margin-right: 5px;
+	}
+
+	.videocon {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.grid-black1 {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.black p {
+		padding: 13px 5px 15px 0px;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.menu .whatdoyouwanttobe {
+		margin: 15px auto -20px;
+	}
+
+	.jf-maingrid {
+		display: block;
+		width: 100%;
+	}
+
+	.jf-sections h2 {
+		margin: 10px -15px;
+	}
+
+	.form {
+		line-height: 20px;
+	}
+
+	.inputbox {
+		width: 100%;
+		margin: 15px 0 0;
+	}
+
+	.submitbox {
+		margin: 10px 32%;
+	}
+
+	.students-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.courses {
+		display: block;
+	}
+
+	.courses h2 {
+		margin: 0;
+	}
+
+	.contact {
+		width: 100%;
+		margin: 0 0 10px;
+	}
+
+	.inquiry-form p {
+		font-size: large;
+	}
+
+	.robot {
+		padding: 10px 3px;
+	}
+
+}
