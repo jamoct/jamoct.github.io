@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guess My Number Game</title>
+	<style>
+
+	img {
+		max-height: 150px;
+		max-width: 150px;
+	}
+
+	</style>
+</head>
+<body>
+	<h1 class="gametitle">Guess the numbah</h1>
+	<div>
+		<ul>
+			<li>To start the game, <strong>enter an end number</strong> that would set the range from 1 to (your end number here).</li>
+			<li>You can only input <strong>numbers</strong>. Any text input other than numbers will be ignored.</li>
+			<li>You are only given <strong>5</strong> chances to guess.</li>
+			<li>If the number is <strong>wrong</strong>, we'll give you a hint!</li>
+			<li>If the number is <strong>correct</strong>, congratulations, you can now celebrate!</li>
+		</ul>
+	</div>
+	<div>
+		<label>Enter an end number (ex. 100 = 1-100, 10 = 1-10):</label>
+		<input class="rangefield" type="number">
+		<input class="rangesubmit" type="submit" value="Submit range">
+	</div>
+	<div>
+		<p class="rangeresult"></p>
+	</div>
+	<div>
+		<p class="numberofguesses"></p>
+		<p class="previousguesses"></p>
+		<label>Enter your guess:</label>
+		<input class="guessfield" type="number">
+		<input class="guesssubmit" type="submit" value="Submit guess">
+	</div>
+	<div class="results">
+		<p>The result:</p>
+		<p class="guessresult"></p>
+		<p class="smallorbig"></p>
+		<img class="gif"></img>
+		<p class="resetbutton"></p>
+	</div>
+<script src="guessmynumber.js"></script>
+</body>
+</html>
