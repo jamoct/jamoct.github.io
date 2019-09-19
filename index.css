@@ -45,9 +45,10 @@ body {
 
 .slider-title {
 	color: #fff;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
-	padding: 150px 50px;
+	padding: 33vh 50px;
+	background-color: rgba(0,0,0,0.6);
 }
 
 .slider-title h2 {
