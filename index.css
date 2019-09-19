@@ -23,7 +23,8 @@ body {
 	min-height: 100%;
 	background-image: url('https://jamoct.github.io/images/bg.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: center center; 
+	background-attachment: fixed;
 }
 
 .hiddenhome {
