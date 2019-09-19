@@ -208,7 +208,7 @@ html, body{
 
 .projects-shots {
 	height: 200px;
-	width: 100%;
+	width: 80%;
 	border: solid 1px black;
 }
 
@@ -286,7 +286,7 @@ html, body{
 
 /* Responsive */
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
 
 	#nav-bar {
 		position: fixed;
@@ -354,6 +354,10 @@ html, body{
 
 	.grid-3 {
 		grid-template-columns: 1fr;
+	}
+
+	.projects-shots {
+		height: 100%;
 	}
 
 	.vid iframe {
