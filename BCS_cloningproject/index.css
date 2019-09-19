@@ -659,4 +659,12 @@ select {
 		padding: 10px 3px;
 	}
 
+	.about-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.team-grid {
+		grid-template-columns: 1fr;
+	}
+
 }
