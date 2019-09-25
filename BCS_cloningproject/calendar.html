@@ -11,12 +11,33 @@
 		<h1><a class="headertitle" href="index.html">BARCELONA CODE SCHOOL</a></h1>
 	</header>
 	<nav id="navbar">
-			<ul id="navitems">
-				<li><a class="navlink" href="calendar.html">Calendar</a></li>
-				<li><a class="navlink" href="courses.html">Courses</a></li>
-				<li><a class="navlink" href="#footer">Contact us</a></li>
-				<li><a class="navlink" href="about.html">About us</a></li>
-			</ul>
+			<div id="navitems">
+				<a class="navlink" href="calendar.html">Calendar</a>
+				<div class="dropdown">
+					<button class="dropbtn" onClick="showMenu()">Courses</button>
+						<div class="dropdown-content" id="dropdownmenu">
+							<a href="courses.html"><strong>JavaScript In-person bootcamp</strong></a>
+							<a href="courses.html">JavaScript Online bootcamp</a>
+							<a href="courses.html">UX/UI Design full-time bootcamp</a>
+							<a href="courses.html">Programming with JavaScript</a>
+							<a href="courses.html">Responsive web design / CSS3</a>
+							<a href="courses.html">BCS Young Coders</a>
+							<a href="courses.html">Wordpress</a>
+							<a href="courses.html">Corporate training</a>
+						</div>
+				</div>
+				<a class="navlink" href="#footer">Contact us</a>
+				<div class="dropdown">
+					<button class="dropbtn" onClick="showMenuAbout()">About us</button>
+					<div class="dropdown-content-about" id="dropdownmenuabout">
+						<a href="about.html">School</a>
+						<a href="about.html">Hire developers</a>
+						<a href="about.html">Testimonials</a>
+						<a href="about.html">Blog</a>
+						<a href="about.html">Assets</a>
+					</div>
+				</div>
+			</div>
 	</nav>
 
 	<div class="white">
@@ -426,5 +447,6 @@
 		<h5>Copyright &copy; 2015-2019 &hyphen; Barcelona Code School | Upgrade Yourself!</h5>
 		<br />
 	</footer>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

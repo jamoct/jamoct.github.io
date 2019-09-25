@@ -36,24 +36,75 @@ html, body{
     text-align: center;
 }
 
-#navbar ul {
+#navitems {
 	display: flex;
 	align-items: center;
 	list-style: none;
 	text-align: center;
 	width: 100%;
+	justify-content: space-around;
 }
 
-
-#navbar ul li {
-	text-align: center;
-	width: 25%;
-}
-
-#navbar ul li a {
+#navitems a {
 	color: white;
 	text-decoration: none;
+}
 
+.dropdown {
+	float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-size: inherit;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	padding: 10px;
+  	margin: 0 -95px;
+}
+
+.dropdown-content a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	float: none;
+}
+
+.dropdown-content-about {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	padding: 10px;
+  	margin: 0 -50px;
+}
+
+.dropdown-content-about a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	float: none;
+}
+
+.show {
+	display: block;
 }
 
 .white, .black {
@@ -657,14 +708,6 @@ select {
 
 	.robot {
 		padding: 10px 3px;
-	}
-
-	.about-grid {
-		grid-template-columns: 1fr;
-	}
-
-	.team-grid {
-		grid-template-columns: 1fr;
 	}
 
 }
