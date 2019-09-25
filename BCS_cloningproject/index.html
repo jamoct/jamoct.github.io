@@ -5,6 +5,7 @@
 	<title>Barcelona Code School Clone</title>
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4e18e11aa9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header id="header">
@@ -35,6 +36,30 @@
 						<a href="about.html">Testimonials</a>
 						<a href="about.html">Blog</a>
 						<a href="about.html">Assets</a>
+					</div>
+				</div>
+			</div>
+			<div id="mobilemenu">
+				<div class="dropdown">
+					<button class="dropbtn" onClick="showMenuMob()">
+						&nbsp;<i class="fas fa-bars"></i>&nbsp;
+					</button>
+					<div class="dropdown-content-mobile" id="dropdownmenumobile">
+						<a class="navlink" href="calendar.html">Calendar</a>
+						<a href="courses.html"><strong>JavaScript In-person bootcamp</strong></a>
+						<a href="courses.html">JavaScript Online bootcamp</a>
+						<a href="courses.html">UX/UI Design full-time bootcamp</a>
+						<a href="courses.html">Programming with JavaScript</a>
+						<a href="courses.html">Responsive web design / CSS3</a>
+						<a href="courses.html">BCS Young Coders</a>
+						<a href="courses.html">Wordpress</a>
+						<a href="courses.html">Corporate training</a>
+						<a class="navlink" href="#footer">Contact us</a>	
+						<a href="about.html">School</a>
+						<a href="about.html">Hire developers</a>
+						<a href="about.html">Testimonials</a>
+						<a href="about.html">Blog</a>
+						<a href="about.html">Assets</a>			
 					</div>
 				</div>
 			</div>
@@ -240,34 +265,46 @@
 
 <script type="text/javascript">
 	
-	function showMenu() {
-	    document.getElementById("dropdownmenu").classList.toggle("show");
-	}
+function showMenu() {
+    document.getElementById("dropdownmenu").classList.toggle("show");
+}
 
-	function showMenuAbout() {
-	    document.getElementById("dropdownmenuabout").classList.toggle("show");
-	  }
+function showMenuAbout() {
+    document.getElementById("dropdownmenuabout").classList.toggle("show");
+  }
 
-	window.onclick = function(event) {
-	  if (!event.target.matches('.dropbtn')) {
-	    var dropdownscon = document.getElementsByClassName("dropdown-content");
-	    var i;
-	    for (i = 0; i < dropdownscon.length; i++) {
-	      var openDropdownCon = dropdownscon[i];
-	      if (openDropdownCon.classList.contains('show')) {
-	        openDropdownCon.classList.remove('show');
-	      }
-	    }
-	    var dropdowns = document.getElementsByClassName("dropdown-content-about");
-	    var j;
-	    for (j = 0; j < dropdowns.length; j++) {
-	      var openDropdown = dropdowns[j];
-	      if (openDropdown.classList.contains('show')) {
-	        openDropdown.classList.remove('show');
-	      }
-	    }
-	  }
-	}
+function showMenuMob() {
+    document.getElementById("dropdownmenumobile").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdownscon = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdownscon.length; i++) {
+      var openDropdownCon = dropdownscon[i];
+      if (openDropdownCon.classList.contains('show')) {
+        openDropdownCon.classList.remove('show');
+      }
+    }
+    var dropdowns = document.getElementsByClassName("dropdown-content-about");
+    var j;
+    for (j = 0; j < dropdowns.length; j++) {
+      var openDropdown = dropdowns[j];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+    var dropdownsmob = document.getElementsByClassName("dropdown-content-mobile");
+    var k;
+    for (k = 0; k < dropdownsmob.length; k++) {
+      var openDropdownMob = dropdownsmob[k];
+      if (openDropdownMob.classList.contains('show')) {
+        openDropdownMob.classList.remove('show');
+      }
+    }
+  }
+}
 
 </script>
 </body>

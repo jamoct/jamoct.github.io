@@ -6,6 +6,10 @@ function showMenuAbout() {
     document.getElementById("dropdownmenuabout").classList.toggle("show");
   }
 
+function showMenuMob() {
+    document.getElementById("dropdownmenumobile").classList.toggle("show");
+}
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdownscon = document.getElementsByClassName("dropdown-content");
@@ -22,6 +26,14 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[j];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
+      }
+    }
+    var dropdownsmob = document.getElementsByClassName("dropdown-content-mobile");
+    var k;
+    for (k = 0; k < dropdownsmob.length; k++) {
+      var openDropdownMob = dropdownsmob[k];
+      if (openDropdownMob.classList.contains('show')) {
+        openDropdownMob.classList.remove('show');
       }
     }
   }
